@@ -37,8 +37,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div className="content">
-                <Grid fluid>
-                  
+                <Grid>
                   Home
                 </Grid>
             </div>

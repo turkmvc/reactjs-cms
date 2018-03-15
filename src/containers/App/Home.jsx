@@ -19,7 +19,7 @@ class App extends Component {
         super(props);
         this.componentDidMount = this.componentDidMount.bind(this);
     }
-    componentDidMount(){
+    componentDidMount() {
         var color = Math.floor((Math.random() * 4) + 1);
         var level;
     }
@@ -30,18 +30,16 @@ class App extends Component {
     }
     render() {
         return (
-
                 <div className="wrapper">
                     <div>
                         <FrontHeader {...this.props}/>
                             <Switch>
                                 {
                                     data.menu.map((item,key) => {
-                                        console.log(item);
                                         return (
-                                            <Route path={item.path} 
+                                            <Route path={item.path} exact
                                             component={item.component} 
-                                            key={key}/>
+                                            key={item.title}/>
                                         );
                                     })
                                 }

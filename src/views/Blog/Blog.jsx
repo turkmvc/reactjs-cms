@@ -19,7 +19,7 @@ import {
     legendBar
 } from 'variables/Variables.jsx';
 
-class Dashboard extends Component {
+class Blog extends Component {
     createLegend(json){
         var legend = [];
         for(var i = 0; i < json["names"].length; i++){
@@ -45,4 +45,4 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+export default Blog;
