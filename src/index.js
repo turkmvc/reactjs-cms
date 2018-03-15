@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import App from 'containers/App/App.jsx';
+// import Home from 'containers/App/Home.jsx';
 
 import './assets/css/bootstrap.min.css';
 import './assets/css/animate.min.css';
@@ -21,7 +22,8 @@ import './assets/css/pe-icon-7-stroke.css';
 ReactDOM.render((
     <HashRouter>
         <Switch>
-            <Route path="/" name="Home" component={App}/>
+            {/* <Route path="/" name="Home" component={Home}/> */}
+            <Route path="/dashbord" name="Dashbord" component={App}/>
         </Switch>
     </HashRouter>
 ),document.getElementById('root'));
